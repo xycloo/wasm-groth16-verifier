@@ -1,0 +1,46 @@
+[package]
+name = "wasm-groth16-verifier"
+version = "0.1.0"
+authors = [ "tdep" ]
+description = "A versatile groth16 proof verifier for working on no_std crates."
+repository = "https://github.com/hyetdep/wasm-groth16-verifier"
+keywords = [ "zero-knowledge", "cryptography", "zkSNARK", "SNARK", "Groth16" ]
+categories = [ "cryptography" ]
+include = ["Cargo.toml", "src", "README.md", "LICENSE-APACHE", "LICENSE-MIT"]
+license = "MIT/Apache-2.0"
+edition = "2018"
+
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false
+
+[dependencies]
+ark-ff = { version = "^0.3.0", default-features = false }
+ark-ec = { version = "^0.3.0", default-features = false }
+ark-serialize = { version = "^0.3.0", default-features = false, features = [ "derive" ] }
+ark-std = { version = "^0.3.0", default-features = false }
+ark-bls12-377 = { version = "^0.3.0", default-features = false, features = ["curve"] }
+wasm-bindgen = "0.2.82"
+js-sys = "0.3.59"
+
+[profile.release]
+opt-level = "z"
+overflow-checks = true
+debug = 0
+strip = "symbols"
+debug-assertions = false
+panic = "abort"
+codegen-units = 1
+lto = true
+
+[profile.dev]
+opt-level = 0
+panic = 'abort'
+
+
+[features]
+default = []
+std = [ ]
+
+[lib]
+crate-type = ["cdylib", "rlib"]
