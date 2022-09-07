@@ -1,2 +1,0 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=/mnt/storagehdd/projects/groth-16-verifier/target/wasm32-unknown-unknown/debug/build/typenum-1332fca828aed793/out/consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=/mnt/storagehdd/projects/groth-16-verifier/target/wasm32-unknown-unknown/debug/build/typenum-1332fca828aed793/out/op.rs
