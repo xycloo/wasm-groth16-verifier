@@ -1,0 +1,30 @@
+{
+  "name": "wasm-groth16-verifier",
+  "collaborators": [
+    "tdep"
+  ],
+  "description": "A versatile groth16 proof verifier for working on no_std crates.",
+  "version": "0.1.0",
+  "license": "MIT/Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyetdep/wasm-groth16-verifier"
+  },
+  "files": [
+    "wasm_groth16_verifier_bg.wasm",
+    "wasm_groth16_verifier.js",
+    "wasm_groth16_verifier.d.ts",
+    "LICENSE-APACHE",
+    "LICENSE-MIT"
+  ],
+  "module": "wasm_groth16_verifier.js",
+  "types": "wasm_groth16_verifier.d.ts",
+  "sideEffects": false,
+  "keywords": [
+    "zero-knowledge",
+    "cryptography",
+    "zkSNARK",
+    "SNARK",
+    "Groth16"
+  ]
+}
