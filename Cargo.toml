@@ -19,7 +19,7 @@ ark-ff = { version = "^0.3.0", default-features = false }
 ark-ec = { version = "^0.3.0", default-features = false }
 ark-serialize = { version = "^0.3.0", default-features = false, features = [ "derive" ] }
 ark-std = { version = "^0.3.0", default-features = false }
-ark-bls12-377 = { version = "^0.3.0", default-features = false, features = ["curve"] }
+ark-bls12-377 = { version = "^0.4.0", default-features = false, features = ["curve"] }
 wasm-bindgen = "0.2.82"
 js-sys = "0.3.59"
 
